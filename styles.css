@@ -1,17 +1,18 @@
-
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.calculator{
+.calculator {
+    margin-top: 3%;
     background-color: rgb(65, 64, 64);
     width: 35%;
     border-radius: 15px;
     overflow: hidden;
 }
-#result{
+
+#result {
     width: 100%;
     padding: 20px;
     font-size: 5rem;
@@ -19,14 +20,16 @@ body{
     background-color: rgb(153, 149, 149);
     color: white;
 }
-.keys{
+
+.keys {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     padding: 25px;
 
 }
-button{
+
+button {
     height: 100px;
     width: 100px;
     border-radius: 50px;
@@ -36,13 +39,87 @@ button{
     font-size: 3rem;
     font-weight: bold;
 }
-button:hover{
+
+button:hover {
     background-color: rgb(168, 165, 165);
 }
 
-.operator{
+.operator {
     background-color: orange;
 }
-.operator:hover{
+
+.operator:hover {
     background-color: rgb(245, 180, 60);
+}
+
+@media (max-width: 767px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .calculator {
+        margin-top: 70px;
+        width: 260px;
+        height: 300px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+
+    button {
+        height: 50px;
+        width: 50px;
+        font-size: 1rem;
+    }
+
+    .keys {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2px;
+        padding: 2.5px;
+
+    }
+
+    #result {
+        padding: 15px;
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .calculator {
+        margin-top: 150px;
+        width: 520px;
+        height: 600px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+
+    button {
+        height: 75px;
+        width: 75px;
+        font-size: 2rem;
+    }
+
+    .keys {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        padding: 17px;
+
+    }
+
+    #result {
+        padding: 17px;
+        font-size: 4rem;
+    }
 }
