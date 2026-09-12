@@ -44,6 +44,10 @@ button:hover {
     background-color: rgb(168, 165, 165);
 }
 
+.equalTo {
+    background-color: orangered;
+}
+
 .operator {
     background-color: orange;
 }
@@ -62,7 +66,7 @@ button:hover {
     .calculator {
         margin-top: 70px;
         width: 260px;
-        height: 300px;
+        height: 350px;
         border-radius: 15px;
         overflow: hidden;
     }
@@ -98,7 +102,7 @@ button:hover {
     .calculator {
         margin-top: 250px;
         width: 680px;
-        height: 800px;
+        height: 850px;
         border-radius: 15px;
         overflow: hidden;
     }
